@@ -1,0 +1,233 @@
+/* Tổng thể Layout */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7fa;
+    display: flex;
+    height: 100vh;
+}
+
+.main-layout {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar bên trái */
+.sidebar {
+    width: 260px;
+    background-color: #fff;
+    border-right: 1px solid #e0e6ed;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.sidebar-header {
+    padding: 0 25px 30px;
+    border-bottom: 1px dashed #d1d9e6;
+    margin-bottom: 20px;
+}
+
+.brand-title {
+    color: #1a4b8d; /* Màu xanh đậm thương hiệu */
+    font-size: 18px;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.brand-subtitle {
+    font-size: 12px;
+    color: #666;
+    margin: 5px 0 0;
+}
+
+.sidebar-menu {
+    flex-grow: 1;
+    padding: 0 15px;
+}
+
+.menu-item {
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    color: #4a5568;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: #f0f4f8;
+}
+
+.menu-item.active {
+    background-color: #1a4b8d; /* Màu active như trong ảnh */
+    color: #fff;
+}
+
+.menu-item.specialty {
+    background-color: #e6f7ff;
+    color: #1890ff;
+    font-weight: bold;
+    border: 1px dashed #1890ff;
+}
+
+/* Khu vực nội dung bên phải */
+.content-area {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.top-header {
+    background: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.user-avatar {
+    width: 35px;
+    height: 35px;
+    background: #5c67f2;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* Mô phỏng điện thoại quét mã */
+.qr-simulation-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    flex-grow: 1;
+}
+
+.phone-container {
+    width: 320px;
+    height: 640px;
+    background: #fff;
+    border-radius: 40px;
+    border: 8px solid #333; /* Viền điện thoại */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+
+.screen {
+    display: none;
+    flex-direction: column;
+    height: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.screen.active {
+    display: flex;
+}
+
+.screen-header {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/* Các thành phần quét mã */
+.camera-view {
+    flex-grow: 1;
+    background: #f9f9f9;
+    border: 2px solid #eee;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.qr-icon-big {
+    font-size: 100px;
+    color: #333;
+}
+
+.scan-line {
+    width: 80%;
+    height: 3px;
+    background: #ff4d4f;
+    position: absolute;
+    box-shadow: 0 0 8px #ff4d4f;
+    animation: scanning 2s infinite ease-in-out;
+}
+
+@keyframes scanning {
+    0% { top: 20%; }
+    50% { top: 80%; }
+    100% { top: 20%; }
+}
+
+.btn-primary {
+    background: #40c4d0; /* Màu từ thiết kế quét mã */
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #36b1bd;
+}
+
+/* Thành công */
+.success-icon {
+    width: 120px;
+    height: 120px;
+    background: #52c41a;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    margin: 80px auto 40px;
+}
+
+.success-message {
+    color: #52c41a;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 100px;
+}
+
+.btn-done {
+    background: #f0f0f0;
+    border: none;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}

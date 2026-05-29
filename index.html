@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAISON DE L'ÉLÉGANCE | Luxury Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="luxury-header">
+        <div class="header-container">
+            <nav class="nav-left">
+                <a href="#shop">Bộ Sưu Tập</a>
+                <a href="#shop">Sản Phẩm</a>
+            </nav>
+            
+            <div class="luxury-logo">
+                <a href="#">Maison de L'Élégance</a>
+                <span>HAUTE COUTURE</span>
+            </div>
+            
+            <nav class="nav-right">
+                <a href="javascript:void(0)" class="cart-icon-btn" onclick="toggleCart()">
+                    Giỏ Hàng (<span id="cart-count">0</span>)
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-banner">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle">NEW ARRIVALS</p>
+            <h1 class="hero-title">Đẳng Cấp & Thời Thượng</h1>
+            <p class="hero-description">Khám phá những thiết kế di sản được chế tác thủ công tinh xảo dành riêng cho bạn.</p>
+            <a href="#shop" class="btn-luxury">KHÁM PHÁ NGAY</a>
+        </div>
+    </section>
+
+    <section id="shop" class="shop-section">
+        <div class="section-title-wrapper">
+            <h2 class="section-title">Kiệt Tác Hoàn Hảo</h2>
+            <div class="title-line"></div>
+        </div>
+
+        <div class="products-grid">
+            
+            <div class="product-card">
+                <div class="product-image-wrapper">
+                    <span class="product-badge">Limited</span>
+                    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80" alt="Túi Xách" class="product-image">
+                    <div class="image-overlay">
+                        <button class="btn-add-cart" onclick="addToCart('Elysian Leather Handbag', 85000000)">THÊM VÀO GIỎ HÀNG</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="product-category">TÚI XÁCH</p>
+                    <h3 class="product-name">Elysian Leather Handbag</h3>
+                    <p class="product-price">85,000,000 ₫</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=600&q=80" alt="Áo" class="product-image">
+                    <div class="image-overlay">
+                        <button class="btn-add-cart" onclick="addToCart('Monaco Silk Summer Shirt', 24500000)">THÊM VÀO GIỎ HÀNG</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="product-category">ÁO THỜI TRANG</p>
+                    <h3 class="product-name">Monaco Silk Summer Shirt</h3>
+                    <p class="product-price">24,500,000 ₫</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=600&q=80" alt="Giày" class="product-image">
+                    <div class="image-overlay">
+                        <button class="btn-add-cart" onclick="addToCart('Starlight Velvet Heels', 32000000)">THÊM VÀO GIỎ HÀNG</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="product-category">GIÀY CAO CẤP</p>
+                    <h3 class="product-name">Starlight Velvet Heels</h3>
+                    <p class="product-price">32,000,000 ₫</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80" alt="Đồng Hồ" class="product-image">
+                    <div class="image-overlay">
+                        <button class="btn-add-cart" onclick="addToCart('Chronograph Imperial Gold', 145000000)">THÊM VÀO GIỎ HÀNG</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="product-category">ĐỒNG HỒ</p>
+                    <h3 class="product-name">Chronograph Imperial Gold</h3>
+                    <p class="product-price">145,000,000 ₫</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-wrapper">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSEmwrvrQ-hfjHG2vOws3j8h9wofX2ZIYFltfYeNxJwXnbnTRj3WKAkgxsy2WcPk9WqRI9PK3fAvFBUUdiQ6DSeubbQrCaGQyYeg_SMaG8q12TxMaOj46SxgSVrxq3e_F2u7GTFhQ&usqp=CAc" alt="Túi Xách" class="product-image">
+                    <div class="image-overlay">
+                        <button class="btn-add-cart" onclick="addToCart('Riviera Noir Tote Bag', 92000000)">THÊM VÀO GIỎ HÀNG</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="product-category">TÚI XÁCH</p>
+                    <h3 class="product-name">Riviera Noir Tote Bag</h3>
+                    <p class="product-price">92,000,000 ₫</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=600&q=80" alt="Áo" class="product-image">
+                    <div class="image-overlay">
+                        <button class="btn-add-cart" onclick="addToCart('Prestige Cotton Blazer', 41000000)">THÊM VÀO GIỎ HÀNG</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="product-category">ÁO THỜI TRANG</p>
+                    <h3 class="product-name">Prestige Cotton Blazer</h3>
+                    <p class="product-price">41,000,000 ₫</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=600&q=80" alt="Giày" class="product-image">
+                    <div class="image-overlay">
+                        <button class="btn-add-cart" onclick="addToCart('Oxford Classic Heritage', 28000000)">THÊM VÀO GIỎ HÀNG</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="product-category">GIÀY CAO CẤP</p>
+                    <h3 class="product-name">Oxford Classic Heritage</h3>
+                    <p class="product-price">28,000,000 ₫</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-wrapper">
+                    <span class="product-badge">Hot</span>
+                    <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=600&q=80" alt="Đồng Hồ" class="product-image">
+                    <div class="image-overlay">
+                        <button class="btn-add-cart" onclick="addToCart('Aura Minimalist Platinum', 198000000)">THÊM VÀO GIỎ HÀNG</button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <p class="product-category">ĐỒNG HỒ</p>
+                    <h3 class="product-name">Aura Minimalist Platinum</h3>
+                    <p class="product-price">198,000,000 ₫</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>GIỎ HÀNG CỦA BẠN</h3>
+            <span class="close-cart-btn" onclick="toggleCart()">✕</span>
+        </div>
+        
+        <div id="cart-items-container" class="cart-items-container">
+            <p class="empty-message">Chưa có sản phẩm nào được chọn.</p>
+        </div>
+
+        <div class="cart-footer">
+            <div class="total-price-box">
+                <span class="total-label">TỔNG TIỀN:</span>
+                <span id="cart-total-price" class="total-amount">0 ₫</span>
+            </div>
+            <button class="btn-checkout" onclick="openCheckoutModal()">TIẾN HÀNH THANH TOÁN</button>
+        </div>
+    </div>
+
+    <div id="checkout-modal" class="modal-overlay">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3>THÔNG TIN ĐẶT HÀNG CAO CẤP</h3>
+                <span class="close-modal-btn" onclick="closeCheckoutModal()">✕</span>
+            </div>
+            
+            <form id="checkout-form" onsubmit="processOrder(event)">
+                <div class="form-group">
+                    <label for="customer-name">Họ và Tên người nhận *</label>
+                    <input type="text" id="customer-name" required placeholder="Ví dụ: Nguyễn Văn A">
+                </div>
+                
+                <div class="form-group">
+                    <label for="customer-phone">Số điện thoại liên lạc *</label>
+                    <input type="tel" id="customer-phone" required placeholder="Ví dụ: 0901234567">
+                </div>
+                
+                <div class="form-group">
+                    <label for="customer-address">Địa chỉ nhận hàng hiệu *</label>
+                    <input type="text" id="customer-address" required placeholder="Số nhà, tên đường, quận, thành phố...">
+                </div>
+                
+                <div class="order-summary-box">
+                    <p class="summary-label">Số tiền bạn cần phải trả</p>
+                    <h2 id="modal-total-display">0 ₫</h2>
+                </div>
+
+                <button type="submit" class="btn-submit-order">XÁC NHẬN ĐẶT HÀNG SANG TRỌNG</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="luxury-footer">
+        <p class="footer-brand">Maison de L'Élégance</p>
+        <p class="footer-credit">© 2026 Toàn bộ quyền sở hữu thuộc về Maison de L'Élégance</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
